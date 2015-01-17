@@ -12,15 +12,15 @@
           
     .navbar-collapse.collapse
       ul.nav.navbar-nav
-        li(class="#{ current.source == 'about' ? 'active' : '' }")
-          a.navcard(href='#{ current.source == "about" ? current.path[0]+"/about" : "" }') #{ public._data.index.about[current.path[0]] }
-        li(class="#{ current.source == 'projects' ? 'active' : '' }")
-          a.navcard(href='#{ current.source == "projects" ? current.path[0]+"/projects" : "" }') #{ public._data.index.projects[current.path[0]] }
+        li(class="#{ current.path[1] == 'about' ? 'active' : '' }")
+          a.navcard(href='/#{ current.path[1] == "about" ? current.path[0]+"/"+current.path[1] : current.path[0]+"/about" }') #{ public._data.index.about[current.path[0]] }
+        li(class="#{ current.path[1] == 'projects' ? 'active' : '' }")
+          a.navcard(href='/#{ current.path[1] == "projects" ? current.path[0]+"/"+current.path[1] : current.path[0]+"/projects" }') #{ public._data.index.projects[current.path[0]] }
       ul.nav.navbar-nav.navbar-right
-        li(class="#{ current.source == 'events' ? 'active' : '' }")
-          a.navcard(href='#{ current.source == "events" ? current.path[0]+"/events" : "" }') #{ public._data.index.events[current.path[0]] }
-        li(class="#{ current.source == 'news' ? 'active' : '' }")
-          a.navcard(href='#{ current.source == "news" ? current.path[0]+"/news" : "" }') #{ public._data.index.news[current.path[0]] }
+        li(class="#{ current.path[1] == 'events' ? 'active' : '' }")
+          a.navcard(href='/#{ current.path[1] == "events" ? current.path[0]+"/"+current.path[1] : current.path[0]+"/events" }') #{ public._data.index.events[current.path[0]] }
+        li(class="#{ current.path[1] == 'news' ? 'active' : '' }")
+          a.navcard(href='/#{ current.path[1] == "news" ? current.path[0]+"/"+current.path[1] : current.path[0]+"/news" }') #{ public._data.index.news[current.path[0]] }
 
     //- if current.source != "index"
     //-   .navbar-brand
