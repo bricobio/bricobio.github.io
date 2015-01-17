@@ -1,1 +1,33 @@
-{}
+{
+    
+    "index" : {
+        "hi" : {
+            "en" : "Hi!",
+            "fr" : "le text"
+        },
+        "p1" : {
+            "en" : "We're Bricobio: Montréal's Do-it-yourself/together-bio community. We are an organization dedicated to science research, education and communication. In our community, we embrace the maker/hacker movement and values, and apply them in the context of biotechnology. That means lots of accessibility, sharing, openness, freedom and passion.",
+            "fr" : "le something"
+        },
+        "p2" : {
+            "en" : "We're a young group at a little over 1 year old. And, we've spent most of this past year running workshops, planning and sharing with others. And, we're just about ready to establish ourselves as a non-profit organization and rent a lab.",
+            "fr" : "Le something"
+        },
+        "p3" : {
+            "en" : "At the moment, we're focusing on finding funding, space, equipment as well as defining the core values and organization (which includes writing this \"About\" page).",
+            "fr" : "something"
+        },
+        "p4" : {
+            "en" : "If you're a normal person with and interest in biotech, an aspiring scientist, or a tenured professor, you're welcome to join! One of our core values being accessibility, we'd like to invite everyone to visit us at our next event or in our lab, once we get setup :) So, come join us, hang out, learn and enjoy the ride!",
+            "fr" : "something"
+        },
+        "cheers" : {
+            "en" : "Cheers,",
+            "fr" : "Salut!"
+        },
+        "Kevin" : {
+            "en" : "Kevin",
+            "fr" : "Kevin"
+        }
+    }
+}
