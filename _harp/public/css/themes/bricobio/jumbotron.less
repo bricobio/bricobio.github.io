@@ -1,0 +1,28 @@
+.jumbotron {
+  background-color: transparent;
+  color: #fff;
+  // border-top: groove 2px lighten(#1f4452, 10%);
+  // border-bottom: groove 2px lighten(#1f4452, 10%);
+}
+
+.jumbotron-ribosome {
+  // background-color: #1f4452;
+  position: absolute;
+  right: -64px;
+  top: -24px;
+
+  // depends on .jumbotron background staying transparent.
+  z-index: -1;
+
+  //- keep good balance on larger screens
+  @media screen and (max-width: @screen-sm-min) {
+    top: -36px;
+  }
+  @media screen and (min-width: @screen-sm-min) {
+    top: -12px;
+    right: 64px;
+  }
+  @media screen and (min-width: @screen-md-max) {
+    right: 200px;
+  }
+}

@@ -9,6 +9,13 @@
 ```jade
 a(href="things") asdf
 ```
+To preview changes:
+
+```bash
+cd bricobio
+harp server _harp -p 9000
+```
+
 
 ### Deploying to GitHub Pages
 

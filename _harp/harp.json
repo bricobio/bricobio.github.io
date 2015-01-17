@@ -1,0 +1,9 @@
+{
+  "globals": {
+    "baseUrl": "",
+    "name": "",
+    "title": "err: THIS TITLE NEEDS TO BE SPECIFIED IN _data.json!",
+    "description": "err: THIS DESCRIPTION NEEDS TO BE SPECIFIED IN _data.json!",
+    "lang" : "current.path[0]"
+  }
+}

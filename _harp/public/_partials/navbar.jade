@@ -1,0 +1,58 @@
+.navbar.navbar-default.navbar-static-top(role='navigation')
+  .container
+    ul.nav.navbar-nav.nav-lang
+      li.language-circle
+        a.navcard(href="current.html") FR
+    .navbar-header
+      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+        span.sr-only Toggle navigation
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+          
+    .navbar-collapse.collapse
+      ul.nav.navbar-nav
+        li(class="#{ current.source == 'about' ? 'active' : '' }")
+          a.navcard(href='/about.html') About
+        li(class="#{ current.source == 'projects' ? 'active' : '' }")
+          a.navcard(href='/projects.html') Projects
+      ul.nav.navbar-nav.navbar-right
+        li(class="#{ current.source == 'events' ? 'active' : '' }")
+          a.navcard(href='/events.html') Events
+        li(class="#{ current.source == 'discuss' ? 'active' : '' }")
+          a.navcard(href='/discuss.html') Discuss
+
+    //- if current.source != "index"
+    //-   .navbar-brand
+    //-     .logo-e(style="left:-40px;")
+    //-       .inset
+    //-         .logo-e3
+    //-           a(href="/", alt="Bricobio")
+    //- if current.source == "index"
+    //-   .navbar-brand
+    //-     .logo-e
+    //-       //- TODO: Make responsive styles, surrounding content rules for this element so it fits on all pages @thomasingalls
+    //-       //- TODO: Need to widgetize this stack of elements, so that they can be ported around nicely. @thomasingalls
+    //-       .logo-e1()
+    //-         a(href="/", alt="Bricobio")
+    //-       .logo-e2()
+    //-         //-
+    //-         //- TODO: make pixel-perfect copy of images used as sprites for these animations
+    //-         //- ?? is there a translation of pandoc into javascript or ruby?
+    //-         .e2a
+    //-           .e2b
+    //-       .radial-progress(data-progress='0')
+    //-         .circle
+    //-           //-(style="z-index:1;")
+    //-           .mask.full
+    //-             .fill
+    //-           .mask.half
+    //-             .fill
+    //-             .fill.fix
+    //-         .inset
+    //-           //-(style="z-index:3;")
+    //-           .logo-e3
+    //-             a(href="/", alt="Bricobio")
+    //-       //- .logo-e4
+    //-       //-   span.glyphicon.glyphicon-pushpin
+    //-       //-   p Pin message
