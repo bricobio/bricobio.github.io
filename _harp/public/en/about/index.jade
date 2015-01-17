@@ -1,19 +1,8 @@
 .jumbotron
   .container
     h1 About
-  ul.nav.nav-pills
-    li.active(role='presentation')
-      a(href='#top') 
-    li
-      a(href='#mission') Mission
-    li
-      a(href='#team') Team
-    li
-      a(href='#getintouch') Get in touch
-.container
-  .row
-    h2 Top
-      a(name="top")
+.container-fluid
+  .row(style="padding:90px;background-color:#eeffff;")
     h3 #{ hi[current.path[0]] }
     p #{ p1[current.path[0]] }
     p #{ p2[current.path[0]] }
@@ -22,25 +11,20 @@
     p #{ cheers[current.path[0]] }
     p #{ Kevin[current.path[0]] }
   .row
-    h2 Mission
-      a(name="mission")
-  .row
-    h2 The Team
+    .container
       a(name="team")
-    for person in public[current.path[0]].about._data["organizers"]
-      .bio-element.col-md-3
-        div
-          div.cardhead
-            img(src="#{ person.image }")
-            div.cardtitles
-              h3 #{ person.name }
-          div.cardcontent
-            p #{ person.bio[current.path[0]] }
-            ul.list-inline
-              for link in person.links
-                li
-                  a(href="#{ link['url'] }", title="#{ link['title'] }") 
-                    span(class="#{ 'fa fa-' + link['site'] }") 
-  .row
-    h2 Contact
-      a(name="getintouch")
+      h2.text-center(style="color:#fff;margin: 60px;") Who we are
+      for person in public[current.path[0]].about._data["organizers"]
+        .bio-element.col-md-3
+          div
+            div.cardhead
+              img(src="#{ person.image }")
+              div.cardtitles
+                h3 #{ person.name }
+            div.cardcontent
+              p #{ person.bio[current.path[0]] }
+              ul.list-inline
+                for link in person.links
+                  li
+                    a(href="#{ link['url'] }", title="#{ link['title'] }") 
+                      span(class="#{ 'fa fa-' + link['site'] }") 
