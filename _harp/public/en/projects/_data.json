@@ -1,1 +1,12 @@
-{}
+{
+    "index" : {
+        "title" : {
+            "en" : "Projects",
+            "fr" : "Projet"
+        },
+        "p1" : {
+            "en" : "Coming soon!",
+            "fr" : "En progres!"
+        }
+    }
+}

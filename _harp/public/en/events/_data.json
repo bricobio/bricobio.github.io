@@ -1,1 +1,12 @@
-{}
+{
+    "index" : {
+        "title" : {
+            "en" : "Events",
+            "fr" : "Événements"
+        },
+        "p1" : {
+            "en" : "Check out our latest events below!",
+            "fr" : "Trouvez notre prochaine événement si-dessous!"
+        }
+    }
+}
