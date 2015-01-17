@@ -1,1 +1,158 @@
-{}
+{
+  "organizers" : [
+    {
+      "name" : "Thomas Ingalls",
+      "id" : "thomasingalls",
+      "active" : true,
+      "image" : "/img/bio/thomasingalls.svg",
+      "bio" : {
+        "en" : "Thomas is a biohacker. He likes hacking bio. Great stuff!",
+        "fr" : "Thomas est un biochineur. Il aime hacker la biologie. Formidable!"
+      },
+      "links" : [
+        {
+          "url" : "https://www.twitter.com/thomasingalls",
+          "title" : "@thomasingalls",
+          "site" : "twitter"
+        },
+        {
+          "url" : "https://www.linkedin.com/in/thomasingalls",
+          "title" : "linkedin",
+          "site" : "linkedin"
+        }
+      ]
+    },
+    {
+      "name" : "Kevin Chen",
+      "id" : "kevinchen",
+      "active" : true,
+      "image" : "/img/ribosome.svg",
+      "bio" : {
+        "en" : "Kevin is a biohacker. He likes hacking bio. Great stuff!",
+        "fr" : "Kevin est un biochineur. Il aime hacker la biologie. Formidable!"
+      },
+      "links" : [
+        {
+          "url" : "https://www.twitter.com/bkevinchen",
+          "title" : "@bkevinchen",
+          "site" : "twitter"
+        },
+        {
+          "url" : "https://www.linkedin.com/in/bkevinchen",
+          "title" : "linkedin",
+          "site" : "linkedin"
+        }
+      ]
+    },
+    {
+      "name" : "Sarah Choukah",
+      "id" : "sarahchoukah",
+      "active" : true,
+      "image" : "/img/ribosome.svg",
+      "bio" : {
+        "en" : "Sarah is a biohacker. He likes hacking bio. Great stuff!",
+        "fr" : "Sarah est une biochineuse. Il aime hacker la biologie. Formidable!"
+      },
+      "links" : [
+        {
+          "url" : "https://www.twitter.com/schoukah",
+          "title" : "@schoukah",
+          "site" : "twitter"
+        },
+        {
+          "url" : "https://www.linkedin.com/in/schoukah",
+          "title" : "linkedin",
+          "site" : "linkedin"
+        }
+      ]
+    },
+    {
+      "name" : "Logan Schwartz",
+      "id" : "loganschwartz",
+      "active" : true,
+      "image" : "/img/ribosome.svg",
+      "bio" : {
+        "en" : "Logan is a biohacker. He likes hacking bio. Great stuff!",
+        "fr" : "Logan est un biochineur. Il aime hacker la biologie. Formidable!"
+      },
+      "links" : [
+        {
+          "url" : "https://www.twitter.com/loganschwartz",
+          "title" : "@loganschwartz",
+          "site" : "twitter"
+        },
+        {
+          "url" : "https://www.linkedin.com/in/loganschwartz",
+          "title" : "linkedin",
+          "site" : "linkedin"
+        }
+      ]
+    },
+    {
+      "name" : "Medy Krouk",
+      "id" : "medykrouk",
+      "active" : true,
+      "image" : "/img/ribosome.svg",
+      "bio" : {
+        "en" : "Medy is a biohacker. He likes hacking bio. Great stuff!",
+        "fr" : "Medy est un biochineur. Il aime hacker la biologie. Formidable!"
+      },
+      "links" : [
+        {
+          "url" : "https://www.twitter.com/medykrouk",
+          "title" : "@medykrouk",
+          "site" : "twitter"
+        },
+        {
+          "url" : "https://www.linkedin.com/in/medykrouk",
+          "title" : "linkedin",
+          "site" : "linkedin"
+        }
+      ]
+    },
+    {
+      "name" : "Philippe Castonguay",
+      "id" : "philippecastonguay",
+      "active" : true,
+      "image" : "/img/ribosome.svg",
+      "bio" : {
+        "en" : "Philippe is a biohacker. He likes hacking bio. Great stuff!",
+        "fr" : "Philippe est un biochineur. Il aime hacker la biologie. Formidable!"
+      },
+      "links" : [
+        {
+          "url" : "https://www.twitter.com/philippecastonguay",
+          "title" : "@philippecastonguay",
+          "site" : "twitter"
+        },
+        {
+          "url" : "https://www.linkedin.com/in/philippecastonguay",
+          "title" : "linkedin",
+          "site" : "linkedin"
+        }
+      ]
+    },
+    {
+      "name" : "Bing Huang",
+      "id" : "binghuang",
+      "active" : true,
+      "image" : "/img/ribosome.svg",
+      "bio" : {
+        "en" : "Bing is a biohacker. He likes hacking bio. Great stuff!",
+        "fr" : "Bing est un biochineur. Il aime hacker la biologie. Formidable!"
+      },
+      "links" : [
+        {
+          "url" : "https://www.twitter.com/binghuang",
+          "title" : "@binghuang",
+          "site" : "twitter"
+        },
+        {
+          "url" : "https://www.linkedin.com/in/binghuang",
+          "title" : "linkedin",
+          "site" : "linkedin"
+        }
+      ]
+    }
+  ]
+}

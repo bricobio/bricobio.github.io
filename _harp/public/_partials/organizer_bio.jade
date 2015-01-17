@@ -1,0 +1,11 @@
+mixin bio(person)
+  if person.active == true
+    .bio-element
+      img(src="img/bio/#{ person.id }.jpg") #{ person.name }
+      h3 #{ person.name }
+      p #{ person.bio }
+      for link in person.links
+        a(href="#{ link['url'] }", title="#{ link['title'] }") 
+          //- span.fa.fa-#{ link['site'] }
+  else
+    return null
