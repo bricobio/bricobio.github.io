@@ -12,11 +12,21 @@
       a(href='#getintouch') Get in touch
 .container
   .row
-    a(name="top")
+    h2 Top
+      a(name="top")
+    h3 #{ hi[current.path[0]] }
+    p #{ p1[current.path[0]] }
+    p #{ p2[current.path[0]] }
+    p #{ p3[current.path[0]] }
+    p #{ p4[current.path[0]] }
+    p #{ cheers[current.path[0]] }
+    p #{ Kevin[current.path[0]] }
   .row
-    a(name="mission")
+    h2 Mission
+      a(name="mission")
   .row
-    a(name="team")
+    h2 The Team
+      a(name="team")
     for person in public[current.path[0]].about._data["organizers"]
       .bio-element.col-md-3
         div
@@ -32,4 +42,5 @@
                   a(href="#{ link['url'] }", title="#{ link['title'] }") 
                     span(class="#{ 'fa fa-' + link['site'] }") 
   .row
-    a(name="getintouch")
+    h2 Contact
+      a(name="getintouch")

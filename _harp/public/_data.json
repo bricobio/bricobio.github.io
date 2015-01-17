@@ -1,6 +1,28 @@
 {
-  "tagline": {
-    "en": "Montreal's first community biological sciences laboratory.",
-    "fr": "La première labo des sciences de biologie pour la communauté de Montréal."
+  "index" : {
+      "about" : {
+          "en" : "About",
+          "fr" : "À propos"
+      },
+      "projects" : {
+          "en" : "Projects",
+          "fr" : "Projets"
+      },
+      "events" : {
+          "en" : "Events",
+          "fr" : "Événements"
+      },
+      "news" : {
+          "en" : "News",
+          "fr" : "Nouvelles"
+      },
+      "languagecircle" : {
+          "en" : "FR",
+          "fr" : "EN"
+      },
+      "langchange" : {
+          "en" : "fr",
+          "fr" : "en"
+      }
   }
 }
