@@ -1,0 +1,58 @@
+/*
+ * h/t ____
+ *
+ * A CSS file for hacks / do-it-now, fix-it-later CSS additions.
+ *
+ * Why? Because good CSS matters for maintainability, but can take
+ * time and thought to write well.
+ *
+ * How to use this file:
+ *
+ * 1. Put your hacks in a class. Always add a class. Always. (Except when you can't.)
+ * 2. Add a sentence or two that gives the context
+ * 3. Add a sentence or two that locates where in the project this shameful CSS appears.
+ * 4. Don't let things live in this file for too long.
+ * 5.
+ * 6. MOST IMPORTANTLY:
+ *
+ *      DO NOT BUILD ANYTHING THAT DEPENDS ON THESE STYLES
+ *
+ *      if you need to build something that uses styles found here,
+ *      it's time to integrate that chunk properly into the main CSS.
+ *
+ * ========================================================================== */
+
+ /*
+  * Prevents jumbotron ribosome image
+  * from overflowing the page width on small viewports
+  * thanks: http://stackoverflow.com/questions/8635799/overflow-xhidden-still-can-scroll
+  *
+  * Affects ALL PAGES, while fixing a problem that appears ONLY on the main page.
+  *
+  * Prevents scrolling
+  *
+  * Appears to be common practice around the web, esp. in sites that use off-canvas menus.
+  * Is a candidate to be integrated into main styles.
+  */
+ html,
+ body {
+   overflow-x: hidden;
+ }
+
+
+
+ /*
+  * Quick styles to make the navbar look similar to the old Bricobio website's navbar.
+  *
+  * Appears on ALL PAGES.
+  *
+  * To fix: requires new classes, fixing global color definitions, identifying the proper
+  * target for each part of this set. Also, requires decisions about colors to be made.
+  */
+ .navbar, .navbar * {
+   color: #51bde6 !important;
+   text-transform: uppercase;
+   font-weight: 400;
+   letter-spacing: 5pt;
+   background-color: #1f4452;
+ }
