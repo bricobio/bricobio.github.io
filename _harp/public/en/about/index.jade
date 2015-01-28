@@ -14,8 +14,8 @@
     .container
       a(name="team")
       h2.text-center(style="color:#fff;margin: 60px;") Who we are
-      for person in public[current.path[0]].about._data["organizers"]
         .bio-element.col-md-3
+      for person in public._data.organizers
           div
             div.cardhead
               img(src="#{ person.image }")
