@@ -1,12 +1,11 @@
 {
-    "index" : {
-        "title" : {
-            "en" : "News",
-            "fr" : "Nouvelles"
-        },
-        "p1" : {
-            "en" : "Coming soon!",
-            "fr" : "En progres!"
-        }
+  "index": {
+    "title": {
+      "en": "News",
+      "fr": "Nouvelles"
+    },
+    "content": {
+      "en": "_translations/content",
+      "fr": "_translations/content"
     }
 }

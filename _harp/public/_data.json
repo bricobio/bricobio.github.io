@@ -1,29 +1,29 @@
 {
-  "index" : {
-      "about" : {
-          "en" : "About",
-          "fr" : "À propos"
-      },
-      "projects" : {
-          "en" : "Projects",
-          "fr" : "Projets"
-      },
-      "events" : {
-          "en" : "Events",
-          "fr" : "Événements"
-      },
-      "news" : {
-          "en" : "News",
-          "fr" : "Nouvelles"
-      },
-      "languagecircle" : {
-          "en" : "FR",
-          "fr" : "EN"
-      },
-      "langchange" : {
-          "en" : "fr",
-          "fr" : "en"
-      }
+  "index": {
+    "about": {
+      "en": "About",
+      "fr": "À Propos"
+    },
+    "projects": {
+      "en": "Projects",
+      "fr": "Projets"
+    },
+    "events": {
+      "en": "Events",
+      "fr": "Événements"
+    },
+    "news": {
+      "en": "News",
+      "fr": "Actualités"
+    },
+    "languagecircle": {
+      "en": "FR",
+      "fr": "EN"
+    },
+    "langchange": {
+      "en": "fr",
+      "fr": "en"
+    }
   },
   "organizers": [{
     "name": "Thomas Ingalls",
