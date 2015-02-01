@@ -9,10 +9,10 @@
             "en" : "It's currently January 2015! Happy New Year! We'll be setting up a news/blog panel here. The latest news is that we're doing a big website overhaul and it will be beautiful shortly afterwards.",
             "fr" : "Maintenant, c'est Janvier 2015! Bonne année! On est en train de faire un grand overhaul sur le site web. Ici, vous allez trouver un panneau des nouvelles/blog."
             },
-        "p2" : {
+    "p2" : {
             "en" : "For now, find out about us on meetup.com, twitter or facebook. See you soon!",
             "fr" : "Pour maintenant, trouvez nous sur meetup.com, twitter ou facebook. À bientôt!"
-        }
+        },
     "content": {
       "en": "_translations/content",
       "fr": "_translations/content"
