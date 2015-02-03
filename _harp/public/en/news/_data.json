@@ -8,6 +8,19 @@
       "en": "_translations/index",
       "fr": "_translations/index"
     }
+  },
+  "happy-inaugural-meeting": {
+    "title": {
+      "en": "Happy Inaugural Meeting, DIYbio Montreal!",
+      "fr": ""
+    },
+    "datetime": "2013-08-22T14:31:33+0500",
+    "author": "thomasingalls",
+    "published": true,
+    "content": "_translations/happy-inaugural-meeting",
+    "tags": {
+      "en": ["DIYbio", "Montreal"],
+      "fr": ["DIYbio", "Montréal"]
     }
   }
 }

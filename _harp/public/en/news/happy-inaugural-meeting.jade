@@ -1,0 +1,20 @@
+- var lang = (current.path.length > 1) ? current.path[0] : "index";
+
+
+.jumbotron
+  img(src="#{ jumbotron-img }")
+.container
+  .row
+    h1 #{ title[lang] }
+
+    for organizer in public._data.organizers
+      if organizer.id === author
+        
+        p(title="#{ organizer.bio[lang] }") by
+          span.btn.btn-warning.btn-sm(style="margin: auto 3px; padding: 2px; 3px;") #{ organizer.name } 
+            a(href="#{ organizer.links[0].url }" style="margin: auto 3px;")
+              span(class="fa fa-#{ organizer.links[0].site }") 
+          | on #{ new Date(datetime).toISOString().replace(/T/, ' at ').replace(/\..+/, '') }
+    
+    != partial("_translations/happy-inaugural-meeting")
+  
