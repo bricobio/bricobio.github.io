@@ -1,28 +1,52 @@
+- var lang = (current.path.length > 1) ? current.path[0] : "index";
+//- - var jsonText = hi[lang];
+//- - var jsonTransformed = JSON.parse(jsonText, function(key, value) {
+//- -     if (value && (typeof value === 'string') && value.indexOf("function") === 0) {
+//- -         // we can only pass a function as string in JSON ==> doing a real function
+//- -         var jsFunc = new Function('return ' + value)();
+//- -         return jsFunc;
+//- -     }
+//- -     return value;
+//- - });
+//- 
+//- - 
+//- - var data = new Object();
+//- - data.func = myFunc;
+//- - var jsonVal = JSON.parse(myFunc);
+//- - alert(jsonVal);
+//- - test();
+
+//- - var myFunc = {"func" : "function test() {return 1+1;}"};
+//- - eval("var jsFunc = " + myFunc.func);
+//- - console.log(jsFunc());
+//- - console.log("alksdfjal;ksdjfls");
+//- 
+//- - var est = {"test" : {"en" : {"h1" : "pass with flying colors"}, "fr" : {"h1" : "Reussit! AH OUI!"} }}
+//- 
+//- 
+//- 
+//-   #{key}= val
+  
+
 .jumbotron
   .container
     h1 #{ title[current.path[0]] }
-.container-fluid
-  .row(style="padding:90px;background-color:#eeffff;")
-    h3 #{ hi[current.path[0]] }
-    p #{ p1[current.path[0]] }
-    p #{ p2[current.path[0]] }
-    p #{ p3[current.path[0]] }
-    p #{ p4[current.path[0]] }
-    p #{ cheers[current.path[0]] }
-    p #{ Kevin[current.path[0]] }
+.container
+  .row.text-only
+    != partial( about[lang] )
   .row
     .container
       a(name="team")
-      h2.text-center(style="color:#fff;margin: 60px;") Who we are
-        .bio-element.col-md-3
+      h2.text-center(style="color:#fff;margin: 60px;") #{ whoweare[lang] }
       for person in public._data.organizers
+        .bio-element.col-md-3.col-sm-6
           div
             div.cardhead
               img(src="#{ person.image }")
               div.cardtitles
                 h3 #{ person.name }
             div.cardcontent
-              p #{ person.bio[current.path[0]] }
+              p #{ person.bio[lang] }
               ul.list-inline
                 for link in person.links
                   li

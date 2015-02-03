@@ -1,7 +1,8 @@
+- var lang = (current.path.length > 1) ? current.path[0] : "index";
+
 .jumbotron
   .container
-    h1 #{ title[current.path[0]] }
+    h1 #{ title[lang] }
 .container-fluid
   .row(style="padding:90px;background-color:#eeffff;")
-    h3 #{ p1[current.path[0]] } 
-    h3 #{ p2[current.path[0]] }
+    != partial("_translations/happy-inaugural-meeting")
