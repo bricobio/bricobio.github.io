@@ -1,2 +1,71 @@
-<!DOCTYPE html><html><head><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Bricobio, Montreal's DIYbio community."/><meta name="author" content="Bricobio"/><meta name="copyright" content="2013-2015 Bricobio"/><link rel="shortcut icon" href="/img/favicon.ico"/><title>Bricobio</title><link rel="stylesheet" href="/css/global.css"/><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/></head></head><body><div role="navigation" class="navbar navbar-default navbar-static-top"><div class="container"><ul class="nav navbar-nav nav-lang"><li class="language-circle"><a href="/undefined/undefined" class="navcard"></a></li></ul><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/index/about" class="navcard"></a></li><li><a href="/index/projects" class="navcard"></a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="/index/events" class="navcard"></a></li><li><a href="/index/news" class="navcard"></a></li></ul></div></div></div><div style="position:relative;" class="jumbotron"><div class="container"><h1>bricobio –<br>
-science for everyone</h1><img src="img/ribosome.svg" alt="ribosome" class="jumbotron-ribosome"/></div></div><div class="container"><div class="row"><div class="col-sm-6"><h3>Thing 1</h3></div><div class="col-sm-6"><h3>Thing 2</h3></div></div></div><h1>Sitemap</h1><ol><li><a href="/">/</a></li><li><a href="/en/about/">/en/about/</a></li><li><a href="/en/events/">/en/events/</a></li><li><a href="/en/news/">/en/news/</a></li><li><a href="/en/projects/">/en/projects/</a></li><li><a href="/fr/about/">/fr/about/</a></li><li><a href="/fr/events/">/fr/events/</a></li><li><a href="/fr/news/">/fr/news/</a></li><li><a href="/fr/projects/">/fr/projects/</a></li></ol><script src="//code.jquery.com/jquery.js"></script><script async="async" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script></body></html>
+<!DOCTYPE html><html><head><head><meta charset="utf-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Bricobio, Montreal's DIYbio community."/><meta name="author" content="Bricobio"/><meta name="copyright" content="2013-2015 Bricobio"/><link rel="shortcut icon" href="/img/icon.ico"/><title>Bricobio</title><link rel="stylesheet" href="/css/global.css"/><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"/></head></head><body><div role="navigation" class="navbar navbar-default navbar-static-top"><div class="container"><ul class="nav navbar-nav nav-lang"><li class="language-circle"><span id="translate" class="navcard">EN</span></li></ul><div class="navbar-header"><button type="button" data-toggle="collapse" data-target=".navbar-collapse" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span>MENU</span></button></div><div class="navbar-collapse collapse"><ul class="nav navbar-nav"><li><a href="/null/about" id="nav_about" class="navcard">%%about%%</a></li><li><a href="/null/projects" id="nav_projects" class="navcard">%%projects%%</a></li></ul><ul class="nav navbar-nav navbar-right"><li><a href="/null/events" id="nav_events" class="navcard">%%events%%</a></li><li><a href="/null/news" id="nav_news" class="navcard">%%news%%</a></li></ul></div></div></div><div style="position:relative;" class="jumbotron"><div class="container"><h1>bricobio –<br>
+science for everyone</h1><img src="img/ribosome.svg" alt="ribosome" class="jumbotron-ribosome"/></div></div><div class="container"><div class="row"><div class="col-sm-6"><h3>Thing 1</h3></div><div class="col-sm-6"><h3>Thing 2</h3></div></div></div><h1>Sitemap</h1><ol><li><a href="/">/</a></li><li><a href="/en/about/">/en/about/</a></li><li><a href="/en/events/">/en/events/</a></li><li><a href="/en/news/happy-inaugural-meeting">/en/news/happy-inaugural-meeting</a></li><li><a href="/en/news/">/en/news/</a></li><li><a href="/en/projects/">/en/projects/</a></li><li><a href="/fr/about/">/fr/about/</a></li><li><a href="/fr/events/">/fr/events/</a></li><li><a href="/fr/news/happy-inaugural-meeting">/fr/news/happy-inaugural-meeting</a></li><li><a href="/fr/news/">/fr/news/</a></li><li><a href="/fr/projects/">/fr/projects/</a></li></ol><script src="//code.jquery.com/jquery.js"></script><script async="async" src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script><script>//- thank you to Kristian Williams on StackOverflow forthe thorough, modern answer
+var lang = window.navigator.languages ? window.navigator.languages[0] : null;
+lang = lang || window.navigator.language || window.navigator.browserLanguage || window.navigator.userLanguage;
+if (lang.indexOf('-') !== -1)
+    lang = lang.split('-')[0];
+    
+if (lang.indexOf('_') !== -1)
+    lang = lang.split('_')[0];
+    
+    
+//- this needs to be gobal
+
+//- [ ] detect browser langauge.
+//- [ ] write translate function.
+//3. 
+var translateLang;
+var desiredLang = lang;
+var translate = function(desiredLang, translateLang){
+
+
+  if (desiredLang == "fr") {
+    translateLang = "en";
+    desiredLang = "fr";
+  } else {
+    translateLang = "fr";
+    desiredLang = "en";
+  }
+  
+  
+  var translations = {
+    "nav_about_text" : {
+      "en" : "About",
+      "fr" : "À Propos"
+    },
+    "nav_projects_text" : {
+      "en" : "Projects",
+      "fr" : "Projets"
+    },
+    "nav_events_text" : {
+      "en" : "Events",
+      "fr" : "Événements"
+    },
+    "nav_news_text" : {
+      "en" : "News",
+      "fr" : "Actualités"
+    }
+  };
+  
+  $("#nav_about")
+    .text(translations.nav_about_text[desiredLang])
+    .attr("href", "/"+desiredLang+"/about");
+  $("#nav_projects")
+    .text(translations.nav_projects_text[desiredLang])
+    .attr("href", "/"+desiredLang+"/projects");
+  $("#nav_events")
+    .text(translations.nav_events_text[desiredLang])
+    .attr("href", "/"+desiredLang+"/events");
+  $("#nav_news")
+    .text(translations.nav_news_text[desiredLang])
+    .attr("href", "/"+desiredLang+"/news");
+  $("#translate")
+    .text(translateLang.toUpperCase())
+    .css({"cursor" :" pointer"});
+    
+    
+};
+$(document).ready(function(){
+  translate();
+});
+$("#translate").click(function(){translate(desiredLang, translateLang);});</script></body></html>
