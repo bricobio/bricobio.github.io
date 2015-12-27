@@ -4,7 +4,7 @@ html {
 
 body {
     margin-top:0;
-    font-family: 'Roboto Mono', 'Cousine', "Lucida Console", "Courier New", Courier, monospace ;
+    font-family: 'Vollkorn',Georgia,Cambria,"Times New Roman",Times,serif;
     font-size: 150%;
 }
 
@@ -108,13 +108,14 @@ a:active{
 
 div.content {
   margin-left:12%;
+  margin-left: 0;
+  padding: 10px;
 }
 
 
 div.header {
   padding-top: 19px;
   padding-bottom: 19px;
-  font-size: 30px;
   width:100%;
   margin-left: 0%;
   height: auto;
@@ -126,18 +127,24 @@ div.header {
 
 .header { position: fixed; top: 0; left: 0; right: 0; z-index: 12; transition: .2s;}
 
-
-
 div.box {
   padding-top: 120px;
 }
-div.content {
-  margin-left: 0;
-  padding: 10px;
+
+div.article{
+  margin-left: auto;
+  margin-right: auto;
+  width: 655px;
 }
 
 div.img {
   text-align: center;
+}
+
+div.column {
+  float: left;
+  text-align: center;
+  width: 100%;
 }
 
 
@@ -163,9 +170,11 @@ div.img {
     text-align: left;
   }
   div.values {
-    padding-left: 340px;
     width:auto;
     height: auto;
+  }
+  div.column{
+      width: 100%;
   }
 
 
@@ -212,9 +221,11 @@ div.img {
       padding: 10px;
     }
     div.values {
-      padding-left: 340px;
       width:auto;
       height: auto;
+    }
+    div.column{
+        width: 100%;
     }
 
 }
@@ -234,16 +245,12 @@ div.img {
 /** Horizontal pads and laptops */
 @media only screen and (min-width: 1096px) {
   body {
-    font-size: 100%;
+    font-size: 21px;
   }
   div.img{
     float:left;
     text-align: left;
-  }
-  div.values {
-    padding-left: 340px;
-    width:auto;
-    height: auto;
+    height: 100%;
   }
 
   ul.menu {
@@ -278,7 +285,12 @@ div.img {
 
   div.box{
     height: 95%;
-    padding-top: 60px;
+    padding-top: 80px;
   }
+
+div.column{
+    width: 33%;
+}
+
 
 }
