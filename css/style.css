@@ -4,7 +4,7 @@ html {
 
 body {
     margin-top:0;
-    font-family: 'Vollkorn',Georgia,Cambria,"Times New Roman",Times,serif;
+    font-family: 'Tinos',Georgia,Cambria,"Times New Roman",Times,serif;
     font-size: 150%;
 }
 
@@ -56,7 +56,6 @@ li.menu a {
   display: block;
   color: black;
   padding: 8px 0 8px 16px;
-  text-decoration: underline;
 }
 
 li.menu a.active {
@@ -146,6 +145,35 @@ div.column {
   width: 100%;
 }
 
+
+/* mailchimp stuff */
+#mc_embed_signup{background:#fff;
+margin-right: 100px;
+margin-left: 100px;
+padding-right: 200px;
+border: darkgrey 2px solid;
+margin-bottom: 20px;
+text-align: right;
+}
+div.clear {
+margin-top: 10px;
+}
+input[type=submit] {
+  padding:5px 15px;
+  background:#262626;
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-weight: 700;
+  font-family: inherit;
+  color: white;
+}
+input[type=text],input[type=email]{
+  border-top: 0px;
+  border-right: 0px;
+}
+/* end of mailchipm stuff */
 
 /* little larger screen */
 
