@@ -196,8 +196,7 @@ input[type=text],input[type=email]{
     text-align: left;
   }
   div.values {
-    width:auto;
-    height: auto;
+    margin-left: 200px;
   }
   div.column{
       width: 100%;
@@ -249,6 +248,7 @@ input[type=text],input[type=email]{
     div.values {
       width:auto;
       height: auto;
+      margin-right: 200px;
     }
     div.column{
         width: 100%;
