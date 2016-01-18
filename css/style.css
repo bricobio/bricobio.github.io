@@ -144,6 +144,10 @@ div.column {
   text-align: center;
   width: 100%;
 }
+div.column4{
+    float: left;
+    width: 100%;
+}
 
 
 /* mailchimp stuff */
@@ -201,6 +205,9 @@ input[type=text],input[type=email]{
   div.column{
       width: 100%;
   }
+  div.column4{
+      width: 100%;
+  }
 
 
 }
@@ -251,6 +258,9 @@ input[type=text],input[type=email]{
       margin-right: 200px;
     }
     div.column{
+        width: 100%;
+    }
+    div.column4{
         width: 100%;
     }
 
@@ -316,6 +326,9 @@ input[type=text],input[type=email]{
 
 div.column{
     width: 33%;
+}
+div.column4{
+  width:25%;
 }
 
 
