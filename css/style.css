@@ -144,7 +144,19 @@ div.column {
   text-align: center;
   width: 100%;
 }
+
+div.column2 {
+  float: left;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 div.column4{
+    float: left;
+    width: 100%;
+}
+div.column4hack{
     float: left;
     width: 100%;
 }
@@ -208,6 +220,9 @@ input[type=text],input[type=email]{
   div.column4{
       width: 100%;
   }
+  div.column4hack{
+      width: 100%;
+  }
 
 
 }
@@ -261,6 +276,9 @@ input[type=text],input[type=email]{
         width: 100%;
     }
     div.column4{
+        width: 100%;
+    }
+    div.column4hack{
         width: 100%;
     }
 
@@ -327,8 +345,14 @@ input[type=text],input[type=email]{
 div.column{
     width: 33%;
 }
+div.column2{
+    width: 40%;
+}
 div.column4{
   width:25%;
+}
+div.column4hack{
+  width:20%;
 }
 
 
