@@ -340,6 +340,7 @@ input[type=text],input[type=email]{
   div.box{
     height: 95%;
     padding-top: 80px;
+    padding-bottom:250px;
   }
 
 div.column{
