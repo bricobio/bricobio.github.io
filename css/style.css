@@ -166,9 +166,9 @@ div.column4hack{
 #mc_embed_signup{background:#fff;
 margin-right: 100px;
 margin-left: 100px;
-border: darkgrey 2px solid;
+border: none;
 margin-bottom: 20px;
-text-align: right;
+text-align: center;
 }
 div.clear {
 margin-top: 10px;
