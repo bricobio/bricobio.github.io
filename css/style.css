@@ -160,6 +160,12 @@ div.column4hack{
     float: left;
     width: 100%;
 }
+div.2column{
+  width: 50%;
+  float:left;
+  text-align:center;
+  height:50%;
+}
 
 
 /* mailchimp stuff */
@@ -213,6 +219,7 @@ input[type=text],input[type=email]{
   }
   div.values {
     margin-left: 200px;
+    text-align:left;
   }
   div.column{
       width: 100%;
@@ -222,6 +229,12 @@ input[type=text],input[type=email]{
   }
   div.column4hack{
       width: 100%;
+  }
+  div.2column{
+    width: 50%;
+    float:left;
+    text-align:center;
+    height:50%;
   }
 
 
@@ -280,6 +293,12 @@ input[type=text],input[type=email]{
     }
     div.column4hack{
         width: 100%;
+    }
+    div.2column{
+      width: 50%;
+      float:left;
+      text-align:center;
+      height:50%;
     }
 
 }
@@ -353,6 +372,9 @@ div.column4{
 }
 div.column4hack{
   width:20%;
+}
+div.2column{
+
 }
 
 
