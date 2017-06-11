@@ -19,7 +19,7 @@
   text-transform: none;
   background-color: transparent;
   border: 0;
-  margin: 0;
+  margin: 10px;
   overflow: visible; }
 
   .hamburger:hover {
