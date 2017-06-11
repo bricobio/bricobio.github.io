@@ -207,7 +207,7 @@ div.header {
 div.box {
   position: relative;
   display: block;
-  padding-top: 7%;
+  padding-top: 9%;
   overflow:auto;
   min-height: 100%;
 }
