@@ -40,6 +40,16 @@ button.hamburger{
 }
 
 button:focus {outline:0;}
+input:focus {outline:0;}
+input {
+  border: 2px solid #bababa;
+  border-radius: 10px;
+  padding: 5px;
+  font-family: inherit;
+  background-color: #bababa;
+  color: white;
+  vertical-align: middle;
+}
 
 ul.menu-hidden {
   list-style-type: none;
@@ -132,6 +142,7 @@ li.menu a:hover:not(.active) {
 ul.top {
   display: block;
   list-style-type: none;
+  padding-left: 0;
 }
 button.top {
   font-family: 'Ubuntu', sans-serif;
@@ -150,6 +161,21 @@ button.top:hover {
   color: white;
   background-color: black;
   transition-duration: 0.5s;
+}
+
+/*text formatting stuff */
+hr{
+  color: #bababa;
+  border: none;
+  border-bottom: 2px solid;
+}
+a.caption {
+  color: #949494;
+  font-size: 50%;
+}
+a.caption:hover {
+  color: #949494;
+  opacity: 0.8;
 }
 
 h1 {
@@ -207,7 +233,7 @@ div.header {
 div.box {
   position: relative;
   display: block;
-  padding-top: 9%;
+  padding-top: 100px;
   overflow:auto;
   min-height: 100%;
 }
