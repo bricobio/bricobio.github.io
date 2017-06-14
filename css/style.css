@@ -162,6 +162,31 @@ button.top:hover {
   background-color: black;
   transition-duration: 0.5s;
 }
+button.register {
+  font-family: 'Ubuntu', sans-serif;
+  font: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 2px solid #3c3c3b;
+  padding: 30px;
+  margin: 60px 20px 60px 20px;
+  overflow: visible;
+  transition-duration: 0.5s;
+  font-size: 150%;
+  border-radius: 20px;
+  float: left;
+}
+button.top:hover {
+  color: white;
+  background-color: black;
+  transition-duration: 0.5s;
+}
+button.register:hover {
+  color: white;
+  background-color: #3c3c3b;
+  transition-duration: 0.5s;
+}
+
 
 /*text formatting stuff */
 hr{
@@ -257,7 +282,8 @@ div.column {
 
 div.column2 {
   float: left;
-  width: 100%;
+  text-align: left;
+  width: 90%;
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -463,9 +489,7 @@ input[type=text],input[type=email]{
     padding: 0;
   }
 
-div.column{
-    width: 33%;
-}
+
 div.column2{
     width: 40%;
 }
