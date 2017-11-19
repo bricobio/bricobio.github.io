@@ -4,8 +4,9 @@ html {
 
 body {
     margin-top:0;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu Light','Ubuntu', sans-serif;
     font-size: 150%;
+    font-weight: 300;
 }
 
 /*
@@ -29,6 +30,15 @@ li.menu {
 text-align: right;
 }
 */
+
+a.icon{
+  color: grey;
+  font-size: 150%;
+}
+
+a.icon:hover{
+  color: black
+}
 
 /* side menu stuff */
 button.hamburger{
@@ -138,6 +148,10 @@ li.menu a:hover:not(.active) {
     color: grey;
 }
 
+li {
+  line-height: 150%;
+}
+
 /* top menu */
 ul.top {
   display: block;
@@ -145,7 +159,7 @@ ul.top {
   padding-left: 0;
 }
 button.top {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu Light','Ubuntu', sans-serif;
   font: inherit;
   color: black;
   text-transform: none;
@@ -163,7 +177,7 @@ button.top:hover {
   transition-duration: 0.5s;
 }
 button.register {
-  font-family: 'Ubuntu', sans-serif;
+  font-family: 'Ubuntu Light','Ubuntu', sans-serif;
   font: inherit;
   text-transform: none;
   background-color: transparent;
@@ -286,6 +300,7 @@ div.column2 {
   width: 90%;
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 20px;
 }
 
 div.column4{
